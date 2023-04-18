@@ -29,13 +29,13 @@ const Header = () => {
           <div className="menu">
             <ul className="flex items-center gap-10">
               <li>
+                <a className="text-smallTextColor font-[600]" href="#projects">Projects</a>
+              </li>
+              <li>
                 <a className="text-smallTextColor font-[600]" href="#about">About</a>
               </li>
               <li>
-                <a className="text-smallTextColor font-[600]" href="#services">Services</a>
-              </li>
-              <li>
-                <a className="text-smallTextColor font-[600]" href="#projects">Projects</a>
+                <a className="text-smallTextColor font-[600]" href="#skills">Skills</a>
               </li>
               <li>
                 <a className="text-smallTextColor font-[600]" href="contact">Contact</a>
