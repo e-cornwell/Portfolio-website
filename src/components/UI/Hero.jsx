@@ -14,14 +14,14 @@ const Hero = () => {
               data-aos-duration="1500"
               className="text-headingColor font-[600] text-[16px]"
             >
-              Hello Welcome
+              Hello,
             </h5>
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
               className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Ethan Cornwell <br />a Software Developer
+              I'm Ethan Cornwell <br />a Web Developer
             </h1>
             <div
               data-aos="fade-up"
