@@ -65,7 +65,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/ethan-cornwell/"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-linkedin-fill"></i>
@@ -73,10 +73,18 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#github"
+                  href="https://github.com/e-cornwell"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-github-fill"></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://twitter.com/EthanCornwell11"
+                  className="text-smallTextColor text-[18px] font-[600]"
+                >
+                  <i class="ri-twitter-fill"></i>
                 </a>
               </span>
             </div>
