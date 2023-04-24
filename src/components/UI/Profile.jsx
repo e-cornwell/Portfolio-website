@@ -2,7 +2,7 @@ import React from "react";
 import Headshot_1 from "../../assets/img/Headshot_1.jpg";
 import CountUp from "react-countup";
 
-const Hero = () => {
+const Profile = () => {
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -117,4 +117,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Profile;
