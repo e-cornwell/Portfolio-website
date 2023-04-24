@@ -5,7 +5,8 @@ import "./App.css";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Profile from "./components/UI/Profile"
+import Profile from "./components/UI/Profile";
+import Projects from "./components/UI/Projects";
 import Skills from "./components/UI/Skills";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Header />
         <main>
           <Profile />
+          <Projects />
           <Skills />
         </main>
       <Footer />
