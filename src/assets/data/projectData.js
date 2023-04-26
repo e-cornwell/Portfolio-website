@@ -1,4 +1,5 @@
-import NoxWebpageCover from "../img/NoxWebpageCover.jpg"
+import NoxWebpageCover from "../img/NoxWebpageCover.jpg";
+import StrangersThingsCover from "../img/StrangersThingsCover.jpg";
 
 const projects = [
     {
@@ -11,7 +12,7 @@ const projects = [
     },
     {
         id: "02",
-        imgURL: {},
+        imgURL: StrangersThingsCover,
         title: "Strangers Things",
         description: "(insert project description)",
         technologies: ["JavaScript", "Express", "React", "Node.js"],
