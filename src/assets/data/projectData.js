@@ -1,5 +1,6 @@
 import NoxWebpageCover from "../img/NoxWebpageCover.jpg";
 import StrangersThingsCover from "../img/StrangersThingsCover.jpg";
+import SnakeSnackinImg from "../img/SnakeSnackinImg.jpg";
 
 const projects = [
     {
@@ -8,15 +9,23 @@ const projects = [
         title: "Nox Capstone Project",
         description: "(insert project description)",
         technologies: ["JavaScript", "PostgreSQL", "Express", "React", "Node.js"],
-        siteURL: "#",
+        siteURL: "https://nox-capstone.onrender.com",
     },
     {
         id: "02",
-        imgURL: StrangersThingsCover,
+        img: StrangersThingsCover,
         title: "Strangers Things",
         description: "(insert project description)",
         technologies: ["JavaScript", "Express", "React", "Node.js"],
-        siteURL: "#",
+        siteURL: "https://lighthearted-frangollo-38ec53.netlify.app",
+    },
+    {
+        id: "03",
+        img: SnakeSnackinImg,
+        title: "Snake Snackin'",
+        description: "(insert project description)",
+        technologies: ["JavaScript", "HTML", "CSS"],
+        siteURL: "https://jazzy-frangipane-423deb.netlify.app",
     },
 ];
 
