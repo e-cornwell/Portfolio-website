@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Profile from "./components/UI/Profile";
 import Projects from "./components/UI/Projects";
 import Skills from "./components/UI/Skills";
+import Contact from "./components/UI/Contact";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Profile />
           <Projects />
           <Skills />
+          <Contact />
         </main>
       <Footer />
     </>

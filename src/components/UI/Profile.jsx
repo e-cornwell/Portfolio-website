@@ -7,7 +7,7 @@ const Profile = () => {
     <section className="pt-0" id="about">
       <div className="container pt-14">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
-          {/* == PERSONAL LEFT CONTENT == */}
+          {/* _____ PERSONAL LEFT CONTENT _____ */}
           <div className="w-full md: basis-1/2">
             <h5
               data-aos="fade-right"

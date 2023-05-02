@@ -6,7 +6,7 @@ module.exports = {
       colors:{
         primaryColor: "#A38A00",
         headingColor: "#000000",
-        smallTextColor: "#000000",
+        smallTextColor: "#000435",
       },
     },
   },
