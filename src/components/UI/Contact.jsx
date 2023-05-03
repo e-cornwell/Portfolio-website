@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
               title="google-maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48474.67494416475!2d-104.73620800608515!3d40.59310117418691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876e5e4ecb8ec757%3A0x12dabcc55bdf35fc!2sAult%2C%20CO%2080610!5e0!3m2!1sen!2sus!4v1682951930892!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115442.03755569423!2d-105.01253843139506!3d40.50650689730066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a4590f030ad%3A0xa9b14228b4ab4082!2sFort%20Collins%2C%20CO!5e0!3m2!1sen!2sus!4v1683156296654!5m2!1sen!2sus"
               className="border-0 w-full h-full"
               allowFullScreen=""
               loading="lazy"

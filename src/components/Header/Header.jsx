@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 const Header = () => {
+  const [showButton, setShowButton] = useState(true);
   const headerRef = useRef(null);
   const menuRef = useRef(null);
 
@@ -22,6 +23,17 @@ const Header = () => {
     return window.removeEventListener("scroll", stickyHeaderFunc);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 500) {
+        setShowButton(false);
+      } else setShowButton(true);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleClick = (ev) => {
     ev.preventDefault();
 
@@ -34,7 +46,7 @@ const Header = () => {
     });
   };
 
-  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   return (
     <header
@@ -104,15 +116,20 @@ const Header = () => {
           {/* == MENU END == */}
 
           {/* == MENU RIGHT == */}
-          <div className="flex item-center gap-4">
-            <button
-              className="flex items-center gap-2 text-smallTextColor font-[600] 
-                border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor
+          <div className="flex items-center gap-4">
+            {showButton && (
+              <button
+                className="flex items-center gap-1 text-smallTextColor font-[200] 
+                border border-solid border-smallTextColor py-2 px-3 rounded-[8px] max-h-[40px] hover:bg-smallTextColor
                 hover:text-white hover:font-[500] ease-in duration-300"
+              >
+                <i class="ri-send-plane-line"></i> Let's Talk
+              </button>
+            )}
+            <span
+              onClick={toggleMenu}
+              className="text-2xl text-smallTextColor md:hidden cursor-pointer"
             >
-              <i class="ri-send-plane-line"></i> Let's Talk
-            </button>
-            <span onClick={toggleMenu} className="text-2xl text-smallTextColor md:hidden cursor-pointer">
               <i class="ri-menu-line"></i>
             </span>
           </div>
