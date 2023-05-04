@@ -94,7 +94,7 @@ const Profile = () => {
           {/* == PERSONAL IMG == */}
           <div className="basis-1/3 mt-10 sm:mt-0">
             <figure className="flex items-center justify-center">
-              <img src={Headshot_1} alt="" />
+              <img className="rounded-[8px]" src={Headshot_1} alt="" />
             </figure>
           </div>
           {/* == PERSONAL IMG END == */}

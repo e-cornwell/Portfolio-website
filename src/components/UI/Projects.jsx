@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import data from "../../assets/data/projectData";
 import Modal from "./Modal";
 
@@ -38,12 +38,13 @@ const Projects = () => {
               data-aos="fade-zoom-in"
               data-aos-delay="50"
               data-aos-duration="1000"
-              className="group max-w-full max-h-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+              className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
             >
               <figure>
                 <img className="rounded-[8px]" src={project.img} alt="" />
               </figure>
-              <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
+
+              <div className="rounded-[8px] w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
                 <div className="w-full h-full flex items-center justify-center">
                   <button
                     onClick={() => handleShowModal(project.id)}

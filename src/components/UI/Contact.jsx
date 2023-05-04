@@ -12,14 +12,14 @@ const Contact = () => {
             <iframe
               title="google-maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115442.03755569423!2d-105.01253843139506!3d40.50650689730066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a4590f030ad%3A0xa9b14228b4ab4082!2sFort%20Collins%2C%20CO!5e0!3m2!1sen!2sus!4v1683156296654!5m2!1sen!2sus"
-              className="border-0 w-full h-full"
+              className="rounded-[8px] border-0 w-full h-full"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
-          <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8">
+          <div className="rounded-[8px] w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8">
             <form className="w-full">
               <div className="mb-5">
 
