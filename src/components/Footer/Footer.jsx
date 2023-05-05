@@ -1,8 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-
-  const year = new Date().getFullYear();  
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#12141e] pt-12">
@@ -11,27 +10,6 @@ const Footer = () => {
       <div className="container">
         <div className="sm:flex items-center justify-between md:gap-8">
           <div className="w-full sm:w-1/2">
-            <h2 className="text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]">
-              Footer
-            </h2>
-            <a href="#contact">
-              <button
-                className="bg-primaryColor text-white font-[500] flex items-center gap-2
-                hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
-              >
-                <i class="ri-mail-line"></i>
-                Contact
-              </button>
-            </a>
-          </div>
-
-          <div className="w-full sm:w-1/2">
-            <p className="text-gray-300 leading-7 mt-4 sm:mt-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              praesentium atque assumenda maiores veniam? Molestias at quae aut
-              officia veritatis!
-            </p>
-
             <div className="flex items-center gap-4 flex-wrap md:gap-8 mt-10">
               <span className="text-gray-300 font-[600] text-[15px]">
                 Professional Links:
@@ -103,13 +81,20 @@ const Footer = () => {
                 </span>
 
                 <div className="leading-[20px]">
-                    <h2 className="text-gray-200 font-[500] text-[18px]">Quickbeam Studios</h2>
+                  <h2 className="text-gray-200 font-[500] text-[18px]">
+                    Quickbeam Studios
+                  </h2>
                 </div>
               </div>
             </div>
             <div>
-                <p className="text-gray-400 text-[14px]">Copyright {year} Quickbeam Studios - All rights reserved.</p>
-                <p className="indent-{10px} text-gray-400 text-[14px]">Logo designed and created by Maya Cornwell - All rights reserved.</p>
+              <p className="text-gray-400 text-[14px]">
+                Copyright {year} Quickbeam Studios - All rights reserved.
+              </p>
+              <p className="indent-{10px} text-gray-400 text-[14px]">
+                Logo designed and created by Maya Cornwell - All rights
+                reserved.
+              </p>
             </div>
           </div>
         </div>

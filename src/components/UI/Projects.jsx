@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import data from "../../assets/data/projectData";
+import projectList from "../../assets/data/projectData";
 import Modal from "./Modal";
 
 const Projects = () => {
   const [nextItems, setNextItems] = useState(6);
-  const [projects, setProjects] = useState(data);
+  const [projects, setProjects] = useState(projectList);
   const [showModal, setShowModal] = useState(false);
   const [activeId, setActiveId] = useState(null);
 
@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
-        <div className="flex items-center justify-between flex-wrap">
+        <div className="flex items-center justify-between flex-wrap" >
           <div className="mb-7 sm:mb-0">
             <h3 className="text-headingColor text-[2rem] font-[700]">
               Top Projects
@@ -32,9 +32,9 @@ const Projects = () => {
         </div>
 
         <div className="flex items-center gap-4 flex-wrap mt-12">
-          {projects?.slice(0, nextItems)?.map((project, index) => (
+          {projects?.slice(0, nextItems)?.map((project, idx) => (
             <div
-              key={index}
+              key={idx}
               data-aos="fade-zoom-in"
               data-aos-delay="50"
               data-aos-duration="1000"
@@ -59,7 +59,7 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-6">
-          {nextItems < projects.length && data.length > 6 && (
+          {nextItems < projects.length && projectList.length > 6 && (
             <button
               onClick={handleLoadMore}
               className="text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"

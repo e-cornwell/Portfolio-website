@@ -2,7 +2,7 @@ import NoxWebpageCover from "../img/NoxWebpageCover.jpg";
 import StrangersThingsCover from "../img/StrangersThingsCover.jpg";
 import SnakeSnackinImg from "../img/SnakeSnackinImg.jpg";
 
-const projects = [
+const projectList = [
     {
         id: "01",
         img: NoxWebpageCover,
@@ -29,5 +29,5 @@ const projects = [
     },
 ];
 
-export default projects;
+export default projectList;
 

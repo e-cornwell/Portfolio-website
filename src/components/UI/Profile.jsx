@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Headshot_1 from "../../assets/img/Headshot_1.jpg";
 import CountUp from "react-countup";
 
 const Profile = () => {
+  const[jobTitle, setJobTitle] = useState(0);
+  const jobTitles = ["Web Developer", "Software Developer", "Application Developer"];
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setJobTitle(currentIdx => (currentIdx + 1) % jobTitles.length)
+    }, 7000);
+
+    return () => {
+      clearInterval(interval);
+    }
+
+  },[])
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -21,7 +35,14 @@ const Profile = () => {
               data-aos-duration="1500"
               className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Ethan Cornwell <br />a Web Developer
+              I'm Ethan Cornwell
+            </h1>
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
+            >
+              a {jobTitles[jobTitle]}
             </h1>
             <div
               data-aos="fade-up"
@@ -53,10 +74,7 @@ const Profile = () => {
               <span>
                 <i class="ri-apps-2-line"></i>
               </span>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-              perspiciatis repudiandae non cupiditate enim. Quasi, ipsam
-              excepturi! Odio unde, vitae facilis quam vero quos molestiae
-              consequatur, illum, iure accusamus totam?
+              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career in order to pursue a passion for software development. I spent the next year teaching myself the basics of coding. My love for games in general inspired me to start programming C# in the Unity engine, beginning with the iconic Flappy Bird game. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. I felt the growing pains however with hard work, excellent teachers, and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault Colorado but am open to new opportunities should they arise.
             </p>
 
             <div className="flex items-center gap-9 mt-14">
@@ -106,9 +124,17 @@ const Profile = () => {
                 <CountUp start={1} end={1} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
-                Years of expirience
+                Years in Technology 
               </h4>
-            </div>  
+            </div>
+            <div className="mb-10">
+              <h2 className="text-headingColor font-[700] text-[32px]">
+                <CountUp start={1} end={4} duration={4} suffix="+" />
+              </h2>
+              <h4 className="text-headingColor font-[700] text-[18px]">
+                Years in Management
+              </h4>
+            </div> 
           </div>
           {/* == PERSONAL CONTENT RIGHT END == */}
         </div>
