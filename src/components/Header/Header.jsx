@@ -58,12 +58,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* == LOGO == */}
           <div className="flex items-center gap-[10px]">
-            <span
-              className="w-[75px] h-[75px] bg-primaryColor rounded-full flex items-center justify-center"
-            >
+            <span className="w-[75px] h-[75px] bg-primaryColor rounded-full flex items-center justify-center">
               <figure className="flex items-center justify-center">
-              <img src={QB_white} alt="" />
-            </figure>
+                <img src={QB_white} alt="" />
+              </figure>
             </span>
 
             <div className="leading-[20px]">
@@ -120,13 +118,14 @@ const Header = () => {
           {/* == MENU RIGHT == */}
           <div className="flex items-center gap-4">
             {showButton && (
-              <button
-                className="flex items-center gap-1 text-smallTextColor font-[200] 
-                border border-solid border-smallTextColor py-2 px-3 rounded-[8px] max-h-[40px] hover:bg-smallTextColor
+              <a
+                className="flex items-center gap-1 text-primaryColor font-[200] 
+                border border-solid border-primaryColor py-2 px-3 rounded-[8px] max-h-[40px] hover:bg-primaryColor
                 hover:text-white hover:font-[500] ease-in duration-300"
+                href="#contact"
               >
                 <i class="ri-send-plane-line"></i> Let's Talk
-              </button>
+              </a>
             )}
             <span
               onClick={toggleMenu}
