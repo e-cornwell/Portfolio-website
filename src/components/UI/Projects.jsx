@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
-        <div className="flex items-center justify-between flex-wrap" >
+        <div className="flex flex-wrap items-center justify-between" >
           <div className="mb-7 sm:mb-0">
             <h3 className="text-headingColor text-[2rem] font-[700]">
               Top Projects
@@ -31,21 +31,21 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 flex-wrap mt-12">
+        <div className="flex flex-wrap items-center gap-4 mt-12">
           {projects?.slice(0, nextItems)?.map((project, idx) => (
             <div
               key={idx}
               data-aos="fade-zoom-in"
               data-aos-delay="50"
               data-aos-duration="1000"
-              className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+              className="group max-w-full max-h-full sm:w-[50%] md:w-[41%] lg:w-[32%] relative z-[1]"
             >
               <figure>
                 <img className="rounded-[8px]" src={project.img} alt="" />
               </figure>
 
               <div className="rounded-[8px] w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
-                <div className="w-full h-full flex items-center justify-center">
+                <div className="flex items-center justify-center w-full h-full">
                   <button
                     onClick={() => handleShowModal(project.id)}
                     className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
@@ -58,7 +58,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-6">
+        <div className="mt-6 text-center">
           {nextItems < projects.length && projectList.length > 6 && (
             <button
               onClick={handleLoadMore}

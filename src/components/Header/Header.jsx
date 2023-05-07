@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import QB_white from "../../assets/img/QB_white-logo.png";
 
 const Header = () => {
   const [showButton, setShowButton] = useState(true);
@@ -58,14 +59,15 @@ const Header = () => {
           {/* == LOGO == */}
           <div className="flex items-center gap-[10px]">
             <span
-              className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500]
-                        rounded-full flex items-center justify-center"
+              className="w-[75px] h-[75px] bg-primaryColor rounded-full flex items-center justify-center"
             >
-              QB
+              <figure className="flex items-center justify-center">
+              <img src={QB_white} alt="" />
+            </figure>
             </span>
 
             <div className="leading-[20px]">
-              <h2 className="text-xl text-smallTextColor font-[700]">
+              <h2 className="font-robo text-2xl text-smallTextColor font-[300]">
                 Quickbeam Studios
               </h2>
             </div>
@@ -128,7 +130,7 @@ const Header = () => {
             )}
             <span
               onClick={toggleMenu}
-              className="text-2xl text-smallTextColor md:hidden cursor-pointer"
+              className="text-2xl cursor-pointer text-smallTextColor md:hidden"
             >
               <i class="ri-menu-line"></i>
             </span>

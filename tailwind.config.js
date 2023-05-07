@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primaryColor: "#A38A00",
-        headingColor: "#000000",
-        smallTextColor: "#000435",
+        primaryColor: "#35191e",
+        headingColor: "#0e0f0f",
+        smallTextColor: "#0e0f0f",
+      },
+      fontFamily:{
+        urban: ['Urbanist', 'sans-serif'],
+        robo: ['Roboto', 'sans-serif']
       },
     },
   },

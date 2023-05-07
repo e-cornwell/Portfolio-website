@@ -5,22 +5,22 @@ import CountUp from "react-countup";
 const Profile = () => {
   const[jobTitle, setJobTitle] = useState(0);
   const jobTitles = ["Web Developer", "Software Developer", "Application Developer"];
-
+  
   useEffect(()=>{
     const interval = setInterval(()=>{
       setJobTitle(currentIdx => (currentIdx + 1) % jobTitles.length)
-    }, 7000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
     }
 
-  },[])
+  },[jobTitles.length])
 
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
-        <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
+        <div className="items-center justify-between md:flex sm:flex-col md:flex-row">
           {/* _____ PERSONAL LEFT CONTENT _____ */}
           <div className="w-full md: basis-1/2">
             <h5
@@ -40,7 +40,7 @@ const Profile = () => {
             <h1
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
+              className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5`}
             >
               a {jobTitles[jobTitle]}
             </h1>
@@ -74,7 +74,7 @@ const Profile = () => {
               <span>
                 <i class="ri-apps-2-line"></i>
               </span>
-              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career in order to pursue a passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games in general inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and programming languages. The course was quite challenging however with hard work, excellent teachers, and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault Colorado but am open to new opportunities should they arise.
+              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career in order to pursue a passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games in general inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and how to apply them. The course was quite challenging however with hard work, excellent teachers, and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault Colorado but am open to new opportunities should they arise.
             </p>
 
             <div className="flex items-center gap-9 mt-14">
@@ -110,7 +110,7 @@ const Profile = () => {
           {/* == PERSONAL LEFT END == */}
 
           {/* == PERSONAL IMG == */}
-          <div className="basis-1/3 mt-10 sm:mt-0">
+          <div className="mt-10 basis-1/3 sm:mt-0">
             <figure className="flex items-center justify-center">
               <img className="rounded-[8px]" src={Headshot_1} alt="" />
             </figure>
@@ -118,7 +118,10 @@ const Profile = () => {
           {/* == PERSONAL IMG END == */}
 
           {/* == PERSONAL CONTENT RIGHT == */}
-          <div className="md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
+          <div className="flex justify-between gap-3 mt-10 text-center md:basis-1/5 md:mt-0 md:flex-col md:justify-end md:text-end">
+            <div className="text-headingColor font-[700] text-[18px]">
+              <h2>Expirience:</h2>
+            </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
                 <CountUp start={1} end={1} duration={2} suffix="+" />
@@ -129,7 +132,7 @@ const Profile = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={1} end={4} duration={4} suffix="+" />
+                <CountUp start={1} end={4} duration={6} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
                 Years in Management

@@ -1,6 +1,6 @@
-import NoxWebpageCover from "../img/NoxWebpageCover.jpg";
-import StrangersThingsCover from "../img/StrangersThingsCover.jpg";
-import SnakeSnackinImg from "../img/SnakeSnackinImg.jpg";
+import NoxWebpageCover from "../img/NoxWebpageCover.png";
+import StrangersThingsCover from "../img/StrangersThingsCover.png";
+import SnakeSnackinImg from "../img/SnakeSnackinImg.png";
 
 const projectList = [
     {
