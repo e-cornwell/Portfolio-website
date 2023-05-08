@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Aos from "aos";
 
 import "./App.css";
@@ -11,6 +11,7 @@ import Skills from "./components/UI/Skills";
 import Contact from "./components/UI/Contact";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(()=>{
     Aos.init();
@@ -18,10 +19,10 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header showModal={showModal}/>
         <main>
           <Profile />
-          <Projects />
+          <Projects showModal={showModal} setShowModal={setShowModal}/>
           <Skills />
           <Contact />
         </main>

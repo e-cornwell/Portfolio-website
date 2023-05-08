@@ -1,13 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
 import QB_white from "../../assets/img/QB_white-logo.png";
 
-const Header = () => {
+const Header = (props) => {
   const [showButton, setShowButton] = useState(true);
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const showModal = props.showModal;
 
-  const stickyHeaderFunc = () => {
-    window.addEventListener("scroll", () => {
+  useEffect(() => {
+    const handleScroll = () => {
       if (
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
@@ -16,13 +17,24 @@ const Header = () => {
       } else {
         headerRef.current.classList.remove("sticky__header");
       }
-    });
-  };
+      if (showModal) {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    };
+    const handleClick = () => {
+      if (showModal) {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    };
 
-  useEffect(() => {
-    stickyHeaderFunc();
-    return window.removeEventListener("scroll", stickyHeaderFunc);
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("click", handleClick);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("click", handleClick);
+    };
+  }, [showModal]);
 
   useEffect(() => {
     const handleResize = () => {

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import projectList from "../../assets/data/projectData";
 import Modal from "./Modal";
 
-const Projects = () => {
+const Projects = (props) => {
   const [nextItems, setNextItems] = useState(6);
   const [projects, setProjects] = useState(projectList);
-  const [showModal, setShowModal] = useState(false);
   const [activeId, setActiveId] = useState(null);
+  const {showModal, setShowModal} = props;
 
   const handleLoadMore = () => {
     setNextItems((prev) => prev + 3);
@@ -41,7 +41,8 @@ const Projects = () => {
               className="group max-w-full max-h-full sm:w-[50%] md:w-[41%] lg:w-[32%] relative z-[1]"
             >
               <figure>
-                <img className="rounded-[8px]" src={project.img} alt="" />
+                <img className="rounded-[8px] rounded-b-none" src={project.img} alt="" />
+                <h2 className="bg-gray-200 py-1 px-2 rounded-[5px] rounded-t-none text-[14px] leading-0">{project.title}</h2>
               </figure>
 
               <div className="rounded-[8px] w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
@@ -69,7 +70,6 @@ const Projects = () => {
           )}
         </div>
       </div>
-
       {showModal && <Modal setShowModal={setShowModal} activeId={activeId}/>}
     </section>
   );

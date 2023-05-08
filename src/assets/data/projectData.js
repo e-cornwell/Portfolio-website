@@ -7,8 +7,8 @@ const projectList = [
         id: "01",
         img: NoxWebpageCover,
         title: "Nox Capstone Project",
-        description: "(insert project description)",
-        technologies: ["JavaScript", "PostgreSQL", "Express", "React", "Node.js"],
+        description: "Talk about the tech",
+        technologies: ["JavaScript", "PostgreSQL", "Express.js", "React.js", "Node.js", "Bcrypt", "AJAX", "API"],
         siteURL: "https://nox-capstone.onrender.com",
     },
     {
@@ -16,7 +16,7 @@ const projectList = [
         img: StrangersThingsCover,
         title: "Strangers Things",
         description: "(insert project description)",
-        technologies: ["JavaScript", "Express", "React", "Node.js"],
+        technologies: ["JavaScript", "Express.js", "React.js", "Node.js", "fetch API"],
         siteURL: "https://lighthearted-frangollo-38ec53.netlify.app",
     },
     {
