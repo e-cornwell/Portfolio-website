@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from 'axios';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (ev) => {
+    ev.preventDefault();
+    try {
+      const response = await axios.post('/send-email', {
+        name, 
+        email,
+        subject,
+        message
+      });
+
+      setStatus(response.data);
+
+    } catch (err) {
+      console.error(err);
+      setStatus('Error sending email')
+    }
+  };
+
   return (
     <section id="contact" className="pb-16">
       <div className="container">
@@ -20,13 +45,15 @@ const Contact = () => {
           </div>
 
           <div className="rounded-[8px] w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8">
-            <form className="w-full">
+            <form className="w-full" onSubmit={handleSubmit}>
               <div className="mb-5">
 
                 <input
                   type="text"
                   placeholder="Enter your name"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
+                  value={name}
+                  onChange={(ev)=> setName(ev.target.value)}
                 />
               </div>
               <div className="mb-5">
@@ -34,6 +61,8 @@ const Contact = () => {
                   type="email"
                   placeholder="Enter your email"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
+                  value={email}
+                  onChange={(ev)=> setEmail(ev.target.value)}
                 />
               </div>
               <div className="mb-5">
@@ -41,6 +70,8 @@ const Contact = () => {
                   type="text"
                   placeholder="Enter the subject"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
+                  value={subject}
+                  onChange={(ev)=> setSubject(ev.target.value)}
                 />
               </div>
 
@@ -50,6 +81,8 @@ const Contact = () => {
                   rows={3}
                   placeholder="Write your message"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
+                  value={message}
+                  onChange={(ev)=> setMessage(ev.target.value)}
                 />
               </div>
 
