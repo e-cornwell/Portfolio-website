@@ -78,7 +78,7 @@ const Header = (props) => {
 
             <div className="leading-[20px]">
               <h2 className="font-robo text-2xl text-smallTextColor font-[300]">
-                Quickbeam Studios
+                QUICKBEAM STUDIOS
               </h2>
             </div>
           </div>

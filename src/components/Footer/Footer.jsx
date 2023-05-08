@@ -85,14 +85,14 @@ const Footer = () => {
 
                 <div className="leading-[20px]">
                   <h2 className="text-gray-400 font-robo font-[300] text-[18px]">
-                    Quickbeam Studios
+                  QUICKBEAM STUDIOS
                   </h2>
                 </div>
               </div>
             </div>
             <div>
               <p className="text-gray-400 font-robo text-[14px]">
-                Copyright {year} Quickbeam Studios - All rights reserved.
+                Copyright {year} QUICKBEAM STUDIOS - All rights reserved.
               </p>
               <p className="font-robo text-gray-400 text-[14px]">
                 Logo designed and created by Maya Cornwell - All rights

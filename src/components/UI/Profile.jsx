@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const Profile = () => {
   const[jobTitle, setJobTitle] = useState(0);
-  const jobTitles = ["Web Developer", "Software Developer", "Application Developer"];
+  const jobTitles = ["a Web Developer", "a Software Developer", "an Application Developer"];
   
   useEffect(()=>{
     const interval = setInterval(()=>{
@@ -23,26 +23,19 @@ const Profile = () => {
         <div className="items-center justify-between md:flex sm:flex-col md:flex-row">
           {/* _____ PERSONAL LEFT CONTENT _____ */}
           <div className="w-full md: basis-1/2">
-            <h5
-              data-aos="fade-right"
-              data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[16px]"
-            >
-              Hello,
-            </h5>
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
-              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
+              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3"
             >
               I'm Ethan Cornwell
             </h1>
             <h1
               data-aos="fade-left"
               data-aos-duration="1500"
-              className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5`}
+              className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3`}
             >
-              a {jobTitles[jobTitle]}
+              {jobTitles[jobTitle]}
             </h1>
             <div
               data-aos="fade-up"
@@ -71,10 +64,7 @@ const Profile = () => {
               data-aos-duration="2000"
               className="flex gap-2 text-headingColor mt-14 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
             >
-              <span>
-                <i class="ri-apps-2-line"></i>
-              </span>
-              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career in order to pursue a passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games in general inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and how to apply them. The course was quite challenging however with hard work, excellent teachers, and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault, Colorado but am open to new opportunities as they arise.
+              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career to pursue a passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and how to apply them. The course was quite challenging however with hard work, excellent teachers and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault and am open to new opportunities as they arise.
             </p>
 
             <div className="flex items-center gap-9 mt-14">

@@ -25,7 +25,7 @@ const projectList = [
         id: "03",
         img: SnakeSnackinImg,
         title: "Snake Snackin'",
-        description: "The first game I developed in JavaScript based off the iconic 'Snake' game.",
+        description: "The first game I developed in JavaScript based off the iconic 'Snake' game. Project goal to demonstrate mastery of JavaScript variable declaration, loop usage, control structures, function declaration and invocation, usage of data types including arrays and objects and DOM manipulation (templating & rendering, element queries and events).",
         technologies: ["JavaScript", "HTML", "CSS"],
         gitURL: "https://github.com/e-cornwell/Arcade-Project",
         siteURL: "https://jazzy-frangipane-423deb.netlify.app",
