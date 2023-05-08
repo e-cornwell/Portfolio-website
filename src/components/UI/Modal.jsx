@@ -35,10 +35,18 @@ const Modal = ({ activeId, setShowModal }) => {
             ))}
           </div>
 
-          <a href={project.siteURL}>
+          <a href={project.siteURL} target="_blank" rel="noreferrer">
             <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">
               Web Link
             </button>
+          </a>
+          <a
+            href={project.gitURL}
+            className="text-smallTextColor text-[30px] font-[600] mt-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="ri-github-fill"></i>
           </a>
         </div>
 

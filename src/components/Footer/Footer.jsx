@@ -1,5 +1,5 @@
 import React from "react";
-import QB_white from "../../assets/img/QB_white-logo.png";
+import QB_white from "../../assets/img/logos/QB_white-logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();

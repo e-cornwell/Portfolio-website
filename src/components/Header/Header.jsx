@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import QB_white from "../../assets/img/QB_white-logo.png";
+import QB_white from "../../assets/img/logos/QB_white-logo.png";
 
 const Header = (props) => {
   const [showButton, setShowButton] = useState(true);
