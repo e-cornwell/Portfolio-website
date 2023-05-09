@@ -12,12 +12,12 @@ const Contact = () => {
     ev.preventDefault();
     try {
       const response = await axios.post('/send-email', {
-        name, 
-        email,
-        subject,
-        message
+        name: name, 
+        email: email,
+        subject: subject,
+        message: message,
       });
-
+      console.log(response.data);
       setStatus(response.data);
 
     } catch (err) {
@@ -77,7 +77,7 @@ const Contact = () => {
 
               <div className="mb-5">
                 <textarea
-                  type="text"
+                  type="html"
                   rows={3}
                   placeholder="Write your message"
                   className="w-full p-3 focus:outline-none rounded-[5px]"

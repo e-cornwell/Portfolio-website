@@ -33,9 +33,9 @@ app.post("/send-email", (req, res) => {
   // Define the email options
   const mailOptions = {
     from: email,
-    to: "your-email@gmail.com",
+    to: process.env.EMAIL,
     subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    html: `<h1>${subject}</h1><p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong> ${message}</p>`,
   };
 
   // Send the email using the transporter object
@@ -44,6 +44,7 @@ app.post("/send-email", (req, res) => {
       console.error(error);
       res.status(500).send("Error sending email");
     } else {
+      console.log(email, subject, name, message)  
       console.log("Email sent: " + info.response);
       res.status(200).send("Email sent successfully");
     }
