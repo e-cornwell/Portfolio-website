@@ -17,13 +17,23 @@ const Contact = () => {
         subject: subject,
         message: message,
       });
-      console.log(response.data);
       setStatus(response.data);
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('')
+      setInterval(()=>{
+        setStatus('');
+      }, 5000);
 
     } catch (err) {
       console.error(err);
       setStatus('Error sending email')
     }
+  };
+
+  const handleClick = () => {
+
   };
 
   return (
@@ -86,9 +96,10 @@ const Contact = () => {
                 />
               </div>
 
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white hover:bg-primaryColor text-center ease-linear duration-150">
+              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-primaryColor text-white hover:bg-smallTextColor text-center ease-linear duration-150">
                 Send Message
               </button>
+              <div className="py-1 px-2 text-[14px] leading-0">{status}</div>
             </form>
           </div>
         </div>
