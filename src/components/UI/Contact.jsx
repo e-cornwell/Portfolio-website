@@ -32,10 +32,6 @@ const Contact = () => {
     }
   };
 
-  const handleClick = () => {
-
-  };
-
   return (
     <section id="contact" className="pb-16">
       <div className="container">
