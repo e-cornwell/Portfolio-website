@@ -3,19 +3,6 @@ import Headshot_1 from "../../assets/img/Headshot_1.jpg";
 import CountUp from "react-countup";
 
 const Profile = () => {
-  const[jobTitle, setJobTitle] = useState(0);
-  const jobTitles = ["a Web Developer", "a Software Developer", "an Application Developer"];
-  
-  useEffect(()=>{
-    const interval = setInterval(()=>{
-      setJobTitle(currentIdx => (currentIdx + 1) % jobTitles.length)
-    }, 5000);
-
-    return () => {
-      clearInterval(interval);
-    }
-
-  },[jobTitles.length])
 
   return (
     <section className="pt-0" id="about">
@@ -35,7 +22,9 @@ const Profile = () => {
               data-aos-duration="1500"
               className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3`}
             >
-              {jobTitles[jobTitle]}
+              <span className="animation-webDev">a Web Developer</span>
+              <span className="animation-softEng">a Software Engineer</span>
+              <span className="animation-appDev">an Application Developer</span>
             </h1>
             <div
               data-aos="fade-up"
@@ -64,7 +53,7 @@ const Profile = () => {
               data-aos-duration="2000"
               className="flex gap-2 text-headingColor mt-14 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
             >
-              I live in Northern Colorado with my wife and two children. In October 2021 I chose to leave my pharmaceutical career to pursue a passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and how to apply them. The course was quite challenging however with hard work, excellent teachers and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault and am open to new opportunities as they arise.
+              I live in Northern Colorado with my wife and two children. In October 2021 I had the opportunity to leave my pharmaceutical career of 8+ years to pursue my passion and curiosity for software development. I spent the next year teaching myself the basics of coding. My love for games inspired me to start programming C# in the Unity engine. This eventually led to a greater interest and resolve in learning programming. September 2022 I was accepted into a Web Development bootcamp through CSU (Colorado State University) and Fullstack Academy. The next six months would be saturated with lectures and projects providing me with a thorough understanding of many new technologies and how to apply them. The course was quite challenging however with hard work, excellent teachers and dedicated peers, I successfully graduated the program in March 2023. I currently work out of my home office in Ault and am open to new opportunities as they arise.
             </p>
 
             <div className="flex items-center gap-9 mt-14">
@@ -117,7 +106,7 @@ const Profile = () => {
                 <CountUp start={1} end={1} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
-                Years in Technology 
+                Years in Programming 
               </h4>
             </div>
             <div className="mb-10">

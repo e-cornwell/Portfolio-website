@@ -15,7 +15,7 @@ const Skills = () => {
             Skills
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7 ">
-            My current software and web developement abilities have been tailored towards full stack web applications or ecommerce websites. Utilizing the PERN stack (PostgreSQL, Express.js, React, Node.js) I have built frontend applications as well as backend servers and databases. My 
+            My current software and web developement abilities have been tailored towards full stack web applications or ecommerce websites. Utilizing the PERN stack (PostgreSQL, Express.js, React, Node.js) I have built frontend applications as well as backend servers and databases. Apart from practicing my JavaScript and other web related programming, I'm studying C++ and the potential application process in Unreal Engine.
           </p>
         </div>
 

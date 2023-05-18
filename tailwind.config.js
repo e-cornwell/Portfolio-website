@@ -12,6 +12,16 @@ module.exports = {
         urban: ['Urbanist', 'sans-serif'],
         robo: ['Roboto', 'sans-serif']
       },
+      animation:{
+        webDev:'webDev 4s infinite',
+        softEng:'softEng',
+        appDev:'appDev',
+      },
+      keyframes:{
+        webDev:{},
+        softDev:{},
+        appDev:{},
+      },
     },
   },
   plugins: [],
