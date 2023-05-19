@@ -22,9 +22,9 @@ const Profile = () => {
               data-aos-duration="1500"
               className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3`}
             >
-              <span className="animation-webDev">a Web Developer</span>
-              <span className="animation-softEng">a Software Engineer</span>
-              <span className="animation-appDev">an Application Developer</span>
+              <span className="animate-webDev">a Web Developer</span>
+              <span className="animate-softEng">a Software Engineer</span>
+              <span className="animate-appDev">an Application Developer</span>
             </h1>
             <div
               data-aos="fade-up"
