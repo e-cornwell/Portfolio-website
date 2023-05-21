@@ -3,6 +3,22 @@ import Headshot_1 from "../../assets/img/Headshot_1.jpg";
 import CountUp from "react-countup";
 
 const Profile = () => {
+  const[jobTitle, setJobTitle] = useState(0);
+  const jobTitles = ["a Web Developer", "a Software Developer", "an Application Developer"];
+
+  useEffect(()=>{
+    let delay = 5400;
+
+    const interval = setInterval(()=>{
+      setJobTitle(currentIdx => (currentIdx + 1) % jobTitles.length);
+      delay = 5400;
+    }, delay);
+
+    return () => {
+      clearInterval(interval);
+    }
+
+  },[jobTitles.length])
 
   return (
     <section className="pt-0" id="about">
@@ -20,11 +36,9 @@ const Profile = () => {
             <h1
               data-aos="fade-left"
               data-aos-duration="1500"
-              className={`text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3`}
+              className={`text-headingColor font-[800] text-[2.5rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-3 animate-jobTitle`}
             >
-              <span className="animate-webDev">a Web Developer</span>
-              <span className="animate-softEng">a Software Engineer</span>
-              <span className="animate-appDev">an Application Developer</span>
+              {jobTitles[jobTitle]}
             </h1>
             <div
               data-aos="fade-up"

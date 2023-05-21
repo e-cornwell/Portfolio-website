@@ -13,23 +13,13 @@ module.exports = {
         robo: ['Roboto', 'sans-serif']
       },
       animation:{
-        webDev:'webDev 4s 1s ease-in-out infinite',
-        softEng:'softEng 4s 1s ease-in-out infinite',
-        appDev:'appDev 4s 1s ease-in-out infinite',
+        jobTitle:'jobTitle 5.5s 0s ease-in-out infinite',
       },
       keyframes:{
-        webDev:{
-          '0%, 45%, 80%, 100%' : { width: 0 },
-          '50%, 75%' : { width: 6.4},
-        },
-        softDev:{
-          '0%' : { opacity: 1 },
-          '100%' : { opacity: 0 },
-        },
-        appDev:{
-          '0%' : { opacity: 1 },
-          '100%' : { opacity: 0 },
-        },
+        jobTitle:{
+          '0%' : { opacity: 1, transform: 'translateX(0)' },
+          '100%' : { opacity: 0, transform: 'translateX(25%)' },
+        }
       },
     },
   },
