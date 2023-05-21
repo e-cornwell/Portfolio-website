@@ -113,7 +113,7 @@ const Profile = () => {
           {/* == PERSONAL CONTENT RIGHT == */}
           <div className="flex justify-between gap-3 mt-10 text-center md:basis-1/5 md:mt-0 md:flex-col md:justify-end md:text-end">
             <div className="text-headingColor font-[700] text-[18px]">
-              <h2>Expirience:</h2>
+              <h2>Experience:</h2>
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
