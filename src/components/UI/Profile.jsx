@@ -6,6 +6,9 @@ const Profile = () => {
   const[jobTitle, setJobTitle] = useState(0);
   const jobTitles = ["a Web Developer", "a Software Developer", "an Application Developer"];
 
+  const currentYear = new Date().getFullYear();
+  const yearsProg = currentYear - 2022;
+
   useEffect(()=>{
     let delay = 5400;
 
@@ -117,7 +120,7 @@ const Profile = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={1} end={1} duration={2} suffix="+" />
+                <CountUp start={0} end={yearsProg} duration={4} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
                 Years in Programming 

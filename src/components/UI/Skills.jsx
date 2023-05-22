@@ -15,7 +15,7 @@ const Skills = () => {
             Skills
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7 ">
-            My current software and web developement abilities have been tailored towards full stack web applications or ecommerce websites. Utilizing the PERN stack (PostgreSQL, Express.js, React, Node.js) I have built frontend applications as well as backend servers and databases. Apart from practicing my JavaScript and other web related programming, I'm studying C++ and the potential application process in Unreal Engine.
+            My current software and web development abilities have been tailored towards full stack web applications or ecommerce websites. Utilizing the PERN stack (PostgreSQL, Express.js, React, Node.js) I have built frontend applications as well as backend servers and databases. Apart from practicing my JavaScript and other web related programming, I'm studying C++ and the potential application process in Unreal Engine.
           </p>
         </div>
 
@@ -37,11 +37,11 @@ const Skills = () => {
                         className="p-4 duration-150 ease-in bg-white rounded shadow cursor-pointer group hover:bg-primaryColor"
                       >
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
-                          Frontend Developement
+                          Frontend Development
                         </h3>
 
                         <p className="text-[15] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Creating fun, interactive UI/UX expirience for the clients using JavaScript, React.js, CSS6, HTML5 and Tailwind CSS.
+                        I work hard to create engaging UI/UX experiences using JavaScript, React.js, CSS6, HTML5, and TailwindCSS. With attention to detail and modern design principles, I develop visually appealing interfaces that captivate users and enhance their experience.
                         </p>
                       </div>
                     </div>
@@ -67,11 +67,11 @@ const Skills = () => {
                         className="p-4 duration-150 ease-in bg-white rounded shadow cursor-pointer group hover:bg-primaryColor"
                       >
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
-                          Backend Developement
+                          Backend Development
                         </h3>
 
                         <p className="text-[15] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Developing quality, secure servers and databases 
+                        I have experience in developing quality and secure servers using environmental variables, bcrypt, Express.js, Node.js, and more. Additionally, I have built efficient and well-seeded databases utilizing PostgreSQL and JavaScript. I have also written my own API functions to facilitate communication between the database, server, and front end of the applications.  
                         </p>
                       </div>
                     </div>

@@ -6,7 +6,7 @@ const Modal = ({ activeId, setShowModal }) => {
 
   return (
     <div className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
-      <div className="w-11/12 md:max-w-[800px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
+      <div className="w-11/12 md:max-w-[700px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
         <div>
           <figure>
             <img className="rounded-[8px]" src={project.img} alt="" />
@@ -14,10 +14,10 @@ const Modal = ({ activeId, setShowModal }) => {
         </div>
 
         <div>
-          <h2 className="text-2xl text-headingColor font-[700] my-5">
+          <h2 className="text-2xl text-headingColor font-[700] my-3">
             {project.title}
           </h2>
-          <p className="text-[15px] leading-7 text-smallTextColor">
+          <p className="text-[14px] leading-7 text-smallTextColor">
             {project.description}
           </p>
 
