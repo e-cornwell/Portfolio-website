@@ -1,8 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import QB_white from "../../assets/img/logos/QB_white-logo.png";
 
 const Header = (props) => {
-  const [showButton, setShowButton] = useState(true);
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const showModal = props.showModal;
@@ -35,17 +34,6 @@ const Header = (props) => {
       window.removeEventListener("click", handleClick);
     };
   }, [showModal]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 500) {
-        setShowButton(false);
-      } else setShowButton(true);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleClick = (ev) => {
     ev.preventDefault();
@@ -129,16 +117,6 @@ const Header = (props) => {
 
           {/* == MENU RIGHT == */}
           <div className="flex items-center gap-4">
-            {showButton && (
-              <a
-                className="flex items-center gap-1 text-primaryColor font-[200] 
-                border border-solid border-primaryColor py-2 px-3 rounded-[8px] max-h-[40px] hover:bg-primaryColor
-                hover:text-white hover:font-[500] ease-in duration-300"
-                href="#contact"
-              >
-                <i class="ri-send-plane-line"></i> Let's Talk
-              </a>
-            )}
             <span
               onClick={toggleMenu}
               className="text-2xl cursor-pointer text-smallTextColor md:hidden"

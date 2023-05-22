@@ -8,7 +8,7 @@ const projectList = [
     img: NoxWebpageCover,
     title: "Nox Capstone Project",
     description:
-      "The Nox Capstone project, my final assignment in the Web Development bootcamp, involved collaborating with my fellow peers, Michael and Walter. Together, we designed an ecommerce PC parts store website, starting with concept design and wireframing. Utilizing GitHub project boards, we effectively tracked requirements and progress. Our implementation included SQL database functions, Express, and Express Router for the server and API middleware, following the CRUD model. We built React components and fetch API functions to facilitate communication with the server and database. Finally, we styled the website using CSS, exploring a couple of new technologies before deploying it on Netlify. This project provided invaluable insights into ecommerce website structure and web development as a whole.",
+      "The Nox Capstone project, my final assignment in the Web Development bootcamp, involved collaborating with my fellow peers, Michael and Walter. Together, we designed an ecommerce PC parts store website. Utilizing GitHub project boards, we effectively tracked requirements and progress. Our implementation included SQL database functions, Express, and Express Router for the server and API middleware, following the CRUD model. We built React components and fetch API functions to facilitate communication with the server and database. Finally, we styled the website using CSS. This project provided invaluable insights into ecommerce website structure and web development as a whole.",
     technologies: [
       "JavaScript",
       "PostgreSQL",

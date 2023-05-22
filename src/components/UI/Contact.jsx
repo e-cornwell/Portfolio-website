@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import resume from '../../assets/forms/resume.pdf';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -32,12 +33,23 @@ const Contact = () => {
     }
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'resume.pdf'
+    link.target = '_blank'
+    link.click();
+  };
+
   return (
     <section id="contact" className="pb-16">
       <div className="container">
         <h2 className="text-headingColor font-[700] text-[2.5rem] mb-8">
           Get in Touch
         </h2>
+        <button className="w-10% m-2 p-3 focus:outline-none rounded-[5px] bg-primaryColor text-white hover:bg-smallTextColor text-center ease-linear duration-150" onClick={handleDownload}>
+          Download Resume <i class="ri-file-pdf-line"></i>
+        </button>
         <div className="md:flex justify-between items-center">
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
